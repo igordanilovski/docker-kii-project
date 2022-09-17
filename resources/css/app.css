@@ -1,0 +1,258 @@
+html,
+body {
+    margin: 0px;
+    background-color: #0F0F10;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    padding: 0px 25px;
+    border-radius: 12px;
+    margin-top: 24px;
+    background-color: #1E2025;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+nav .nav-logo {
+    padding: 14px 0px;
+    margin-right: 40px;
+}
+
+nav .nav-links a {
+    color: #fff;
+    margin: 0 14px;
+    padding-top: 1px;
+}
+
+nav .right {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+nav .right a {
+    margin: auto;
+    text-align: center;
+    border: 0px;
+    padding: 6px 16px;
+    background-color: #FF9100;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.h4-heading {
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.page-content {
+    margin-top: 36px;
+    display: flex;
+    width: 100%;
+}
+
+.left-bar {
+    border-radius: 12px;
+    width: 20%;
+    margin-right: 2%;
+    background-color: #1E2025;
+    height: 100%;
+}
+
+.left-bar .content {
+    width: 85%;
+    margin: auto;
+    padding: 25px 0px;
+}
+
+.left-bar .content .side-bar-text {
+    color: #A0A7AF;
+    font-weight: 500;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.left-bar .content .side-bar-text:hover {
+    padding-left: 14px;
+}
+
+.left-bar .content .side-bar-text.active {
+    color: #FF9100;
+}
+
+.right-bar {
+    width: 78%;
+    border-radius: 12px;
+}
+
+.search-box form {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+#searchTerm {
+    background: #1E2025;
+    color: #fff;
+    border: 0px;
+    border-radius: 8px;
+    outline: 0px;
+    padding: 10px 14px;
+    width: 100%;
+    margin-right: 18px;
+}
+
+#submitButton {
+    margin: auto;
+    text-align: center;
+    border: 0px;
+    padding: 10px 20px;
+    background-color: #FF9100;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.right-bar .flexbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.right-bar .item {
+    background-color: #FF9100;
+    height: 180px;
+    width: 32%;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.right-bar .item .content-box {
+    margin: auto;
+    width: 85%;
+    height: 100%;
+    padding: 16px 0px;
+    position: relative;
+}
+
+.right-bar .item .content-box .item-heading {
+    color: #fff;
+    margin-bottom: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.right-bar .item .content-box .item-text {
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.right-bar .item .content-box .item-text p {
+    margin: 0 0 0 5px;
+    color: #fff;
+}
+
+.right-bar .item .content-box .link {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 16px;
+    background-color: #fff;
+    color: #FF9100;
+    border-radius: 8px;
+    border: 3px solid #fff;
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.right-bar .item .content-box .link:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.right-bar .item .content-box .link:hover p {
+    color: #FFF;
+}
+
+.right-bar .item .content-box .link p {
+    margin: 0px;
+    padding: 5px 0px;
+    color: #FF9100;
+    font-weight: 600;
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ENTITY PAGE */
+.map-content {
+    width: 100%;
+    position: relative;
+    border-radius: 12px;
+    background-color: #1E2025;
+    padding: 14px;
+    height: fit-content;
+}
+
+.map-content #mapdiv {
+    width: 100%;
+    margin: auto;
+    border-radius: 12px;
+    height: 650px;
+}
+
+.map-content .entity-placeholder {
+    background-color: #FF9100;
+    border-radius: 12px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    z-index: 999;
+}
+
+.entity-placeholder h4 {
+    margin: 1px 0px 0px 0px;
+    font-weight: 600;
+    padding: 10px 16px;
+}
+
+.place-description .h4-heading {
+    color: #fff;
+    font-weight: 600;
+}
+
+.place-description p {
+    color: #fff;
+}
+
+.place-description p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.place-description .report-btn {
+    margin: auto;
+    text-align: center;
+    border: 0px;
+    padding: 10px 16px 11px 16px;
+    background-color: #FF1744;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+}
