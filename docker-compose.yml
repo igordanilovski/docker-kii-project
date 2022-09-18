@@ -1,0 +1,24 @@
+version: '3.5'
+services:
+    php:
+        image: igorceee/laravel-kubernetes
+        restart: always
+        ports:
+            - 8000:80
+        environment:
+            - APP_KEY="base64:dKYEf9q7M2fWqjxTtG50J3s4VAUxR7RZIFbwo6xwhIA="
+            - APP_ENV=local
+            - APP_DEBUG=true
+            - DB_PORT=3306
+            - DB_HOST=eu-cdbr-west-03.cleardb.net
+            - DB_DATABASE=heroku_6af402c3c413f8b
+            - DB_USERNAME=b63a8c5a32788e
+            - DB_PASSWORD=cbc2d0b8
+    mysql:
+        image: mysql:5.7
+        restart: always
+        environment:
+            - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+            - MYSQL_DATABASE=${DB_DATABASE}
+            - MYSQL_USER=${DB_USERNAME}
+            - MYSQL_PASSWORD=${DB_PASSWORD}
