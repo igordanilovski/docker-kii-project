@@ -28,3 +28,6 @@ jobs:
 
     - name: Docker Push
       run: docker push igorceee/docker-kii-project:$DEFAULT_TAG
+      
+    - name: Build the stack
+      run: docker-compose up -d
