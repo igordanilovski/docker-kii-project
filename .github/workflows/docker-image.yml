@@ -34,6 +34,3 @@ jobs:
 
     - name: Docker Push Latest
       run: docker push igorceee/docker-kii-project:latest
-      
-    - name: Build the stack
-      run: docker-compose up -d
