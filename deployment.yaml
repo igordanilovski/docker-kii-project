@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docker-kii-project-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      deployment: docker-kii-project
+  template:
+    metadata:
+      labels:
+        deployment: docker-kii-project
+    spec:
+      containers:
+        - name: app
+          image: igorceee/docker-kii-project:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: APP_KEY
+              valueFrom:
+                configMapKeyRef:
+                  name: docker-kii-project-map
+                  key: APP_KEY
+            - name: DB_CONNECTION
+              valueFrom:
+                configMapKeyRef:
+                  name: docker-kii-project-map
+                  key: DB_CONNECTION
+            - name: DB_DATABASE
+              valueFrom:
+                configMapKeyRef:
+                  name: docker-kii-project-map
+                  key: DB_DATABASE
+            - name: DB_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: docker-kii-project-map
+                  key: DB_HOST
+            - name: DB_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  name: docker-kii-project-map
+                  key: DB_PASSWORD
+            - name: DB_USERNAME
+              valueFrom:
+                configMapKeyRef:
+                  name: docker-kii-project-map
+                  key: DB_USERNAME

@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: docker-kii-project-map
+data:
+  APP_DEBUG: "false"
+  APP_ENV: production
+  APP_KEY: "base64:dKYEf9q7M2fWqjxTtG50J3s4VAUxR7RZIFbwo6xwhIA="
+  APP_NAME: "Laravel"
+  LOG_LEVEL: debug
+  APP_URL: http://localhost
+  BROADCAST_DRIVER: pusher
+  CACHE_DRIVER: file
+  QUEUE_CONNECTION: sync
+  SESSION_DRIVER: database
+  DB_CONNECTION: mysql
+  DB_DATABASE: heroku_6af402c3c413f8b
+  DB_HOST: mysql
+  DB_PASSWORD: cbc2d0b8
+  DB_PORT: 3306
+  DB_USERNAME: b63a8c5a32788e
