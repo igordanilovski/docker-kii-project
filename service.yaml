@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: devops-service
+  name: docker-kii-project-service
 spec:
   selector:
-    deployment: devops
+    deployment: docker-kii-project
   type: LoadBalancer
   ports:
     - protocol: TCP
