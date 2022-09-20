@@ -4,7 +4,7 @@ services:
         image: igorceee/docker-kii-project
         restart: always
         ports:
-            - 8000:80
+            - "8000:8000"
         environment:
             - APP_KEY="base64:dKYEf9q7M2fWqjxTtG50J3s4VAUxR7RZIFbwo6xwhIA="
             - APP_ENV=local
