@@ -17,5 +17,5 @@ data:
   DB_DATABASE: heroku_6af402c3c413f8b
   DB_HOST: mysql
   DB_PASSWORD: cbc2d0b8
-  DB_PORT: 3306
+  DB_PORT: "3306"
   DB_USERNAME: b63a8c5a32788e
