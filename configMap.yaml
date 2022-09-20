@@ -6,7 +6,7 @@ data:
   APP_DEBUG: "false"
   APP_ENV: production
   APP_KEY: "base64:dKYEf9q7M2fWqjxTtG50J3s4VAUxR7RZIFbwo6xwhIA="
-  APP_NAME: "Laravel"
+  APP_NAME: "docker-kii-project"
   LOG_LEVEL: debug
   APP_URL: http://localhost
   BROADCAST_DRIVER: pusher
