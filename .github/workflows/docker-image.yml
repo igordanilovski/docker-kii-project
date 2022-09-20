@@ -29,8 +29,14 @@ jobs:
     - name: Docker Push
       run: docker push igorceee/docker-kii-project:$DEFAULT_TAG
       
+    - name: Docker Compose
+      run: docker-compose up -d
+      
     - name: Build the Docker Image Latest
       run: docker build -t docker-kii-project . --tag igorceee/docker-kii-project:latest
+      
+    - name: Docker Compose
+      run: docker-compose up -d
 
     - name: Docker Push Latest
       run: docker push igorceee/docker-kii-project:latest
